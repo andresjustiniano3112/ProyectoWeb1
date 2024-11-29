@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Categorías - Tienda de Libros</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/gestionar-categorias.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Administración - Tienda de Libros</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../admin.html">Inicio</a></li>
+                <li><a href="gestionar-productos.html">Gestionar Productos</a></li>
+                <li><a href="gestionar-categorias.html">Gestionar Categorías</a></li>
+                <li><a href="gestionar-usuarios.html">Gestionar Usuarios</a></li>
+                <li><a href="listado-pedidos.html">Listado de Pedidos</a></li>
+                <li><a href="index.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gestionar Categorías</h1>
+        <form id="addCategoryForm">
+            <label for="nombre">Nombre de la Categoría:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <button type="submit">Agregar Categoría</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="categoriesTable">
+                <!-- Las categorías se cargarán dinámicamente -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="../js/gestionarCategorias.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/producto.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tienda de Libros</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categoria.html">Categorías</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li id="perfilLink" style="display: none;"><a href="perfil.html">Perfil</a></li>
+                <li id="authButton"><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="categoryTitle"></h2>
+        <div id="productsContainer" class="grid-container">
+        </div>
+        <button class="back-button" onclick="window.location.href='categoria.html'">Volver a Categorías</button>
+    </main>
+    
+    <script src="js/productos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/perfil.js"></script>
+    
+</body>
+</html>
